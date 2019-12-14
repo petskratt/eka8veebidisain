@@ -1,0 +1,102 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+header {
+    background-image: url(ZkbW33KN4Vg.jpg);
+    background-color: grey;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/* kommentaar */
+
+.bg-semi-dark {
+    background-color: rgba(0, 0, 0, 0.72);
+    color: #FCFCFC;
+}
+
+.bg-demi-dark {
+    background-color: rgba(0, 0, 0, 0.52);
+}
+
+.top-bar {
+    font-size: 14px;
+    line-height: 1;
+    padding: 9px 0;
+}
+
+nav {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.nav-item {
+    margin-right: 30px;
+}
+
+.navbar-light .navbar-nav .active>.nav-link,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .show>.nav-link {
+    border-bottom: 3px solid #D6342E;
+    padding-bottom: 5px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: rgba(0, 0, 0, .9);
+}
+
+header h1,
+header h5 {
+    color: white;
+}
+
+header h1 {
+    font-size: 42px;
+    padding-top: 128px;
+    padding-bottom: 32px;
+    font-weight: bold;
+}
+
+header h5 {
+    line-height: 36px;
+    font-weight: 600;
+}
+
+@media (max-width: 768px) {
+    header {
+        background-image: url(https://placekitten.com/g/800/800);
+    }
+}
+
+@media print {
+    header {
+        background-image: none;
+    }
+}
+
+
+/* @media (min-width: 768px) { */
+
+.cat-icon {
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.cat-a {
+    background-image: url("motor-sports.svg");
+}
+
+.cat-b,
+.cat-d {
+    background-image: url(auto.svg);
+}
+
+.cat-c {
+    background-image: url(truck.svg);
+}
+
+
+/* } */
