@@ -2,23 +2,29 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
-header {
-    background-image: url(ZkbW33KN4Vg.jpg);
+.hero-bg {
+    background: url(ZkbW33KN4Vg.jpg);
     background-color: grey;
     background-repeat: no-repeat;
     background-size: cover;
+    background-position-y: bottom;
 }
 
+.slanted-bg {
+    background: url(slanted.svg);
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+}
+
+header {
+    background-color: rgba(15, 15, 15, 0.5);
+}
 
 /* kommentaar */
 
 .bg-semi-dark {
-    background-color: rgba(0, 0, 0, 0.72);
+    background-color: rgba(0, 0, 0, 0.5);
     color: #FCFCFC;
-}
-
-.bg-demi-dark {
-    background-color: rgba(0, 0, 0, 0.52);
 }
 
 .top-bar {
@@ -36,10 +42,10 @@ nav {
     margin-right: 30px;
 }
 
-.navbar-light .navbar-nav .active>.nav-link,
+.navbar-light .navbar-nav .active > .nav-link,
 .navbar-light .navbar-nav .nav-link.active,
 .navbar-light .navbar-nav .nav-link.show,
-.navbar-light .navbar-nav .show>.nav-link {
+.navbar-light .navbar-nav .show > .nav-link {
     border-bottom: 3px solid #D6342E;
     padding-bottom: 5px;
 }
@@ -77,7 +83,6 @@ header h5 {
     }
 }
 
-
 /* @media (min-width: 768px) { */
 
 .cat-icon {
@@ -86,12 +91,12 @@ header h5 {
 }
 
 .cat-a {
-    background-image: url("motor-sports.svg");
+    background-image: url("bike.svg");
 }
 
 .cat-b,
 .cat-d {
-    background-image: url(auto.svg);
+    background-image: url(car.svg);
 }
 
 .cat-c {
