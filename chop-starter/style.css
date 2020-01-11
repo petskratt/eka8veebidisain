@@ -6,7 +6,11 @@
 
 body {
     font-family: 'Open Sans', sans-serif;
+<<<<<<< HEAD
     color: green;
+=======
+    background: pink;
+>>>>>>> arendus
 }
 
 .hero-bg {
