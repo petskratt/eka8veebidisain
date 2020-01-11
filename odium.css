@@ -1,0 +1,155 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.hero-bg {
+    background: url(ZkbW33KN4Vg.jpg);
+    background-color: grey;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: bottom;
+}
+
+.slanted-bg {
+    background: url(slanted.svg);
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+}
+
+header {
+    background-color: rgba(15, 15, 15, 0.5);
+}
+
+
+/* kommentaar */
+
+.bg-semi-dark {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #FCFCFC;
+}
+
+.top-bar {
+    font-size: 14px;
+    line-height: 1;
+    padding: 9px 0;
+}
+
+nav {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.nav-item {
+    margin-right: 30px;
+}
+
+.navbar-light .navbar-nav .active>.nav-link,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .show>.nav-link {
+    border-bottom: 3px solid #D6342E;
+    padding-bottom: 5px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: rgba(0, 0, 0, .9);
+}
+
+header h1,
+header h5 {
+    color: white;
+}
+
+header h1 {
+    font-size: 42px;
+    padding-top: 128px;
+    padding-bottom: 32px;
+    font-weight: bold;
+}
+
+header h5 {
+    line-height: 36px;
+    font-weight: 600;
+}
+
+@media (max-width: 768px) {
+    header {
+        background-image: url(https://placekitten.com/g/800/800);
+    }
+}
+
+@media print {
+    header {
+        background-image: none;
+    }
+}
+
+
+/* @media (min-width: 768px) { */
+
+.cat-icon {
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.cat-a {
+    background-image: url("bike.svg");
+}
+
+.cat-b,
+.cat-d {
+    background-image: url(car.svg);
+}
+
+.cat-c {
+    background-image: url(truck.svg);
+}
+
+
+/* } */
+
+.cat-a {
+    transform: rotate3d(3, 3, 3, 30deg);
+    animation: catstuff 12s ease-in-out infinite alternate;
+    float: left;
+    margin-left: 30px;
+}
+
+.cat-b {
+    transform: rotate3d(3, 3, 3, 30deg);
+    animation: catstuff 8s ease-in-out infinite alternate;
+    float: left;
+    margin-left: 30px;
+}
+
+.cat-c {
+    transform: rotate3d(-1, -1, -1, 20deg);
+    animation: catstuff 14s ease-in-out infinite alternate;
+    float: left;
+    margin-left: 15px;
+}
+
+.cat-d {
+    transform: rotate3d(-3, -3, -3, 30deg);
+    animation: catstuff 10s ease-in-out infinite alternate;
+    float: left;
+    margin-left: 30px;
+}
+
+@keyframes catstuff {
+    0% {
+        transform: translatey(0px) translatex(0px) rotate3d(1, 3, 3, 3deg);
+    }
+    20% {
+        transform: translatey(10px) translatex(7px);
+    }
+    50% {
+        transform: translatey(-2px) translatex(2px);
+    }
+    80% {
+        transform: translatey(-8px) translatex(-12px);
+    }
+    100% {
+        transform: translatey(0px) translatex(0px);
+    }
+}
