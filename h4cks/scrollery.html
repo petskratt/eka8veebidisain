@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>Scrolling portfolio gallery</title>
+
+    <style>
+
+        .cover-container-container {
+            position: relative;
+            padding: 0 30px;
+            margin-top: 5rem;
+        }
+
+        .cover-container-container.large:before {
+            content: "<";
+            position: absolute;
+            left: 0;
+            top: 50%;
+            font-size: 2rem;
+        }
+
+        .cover-container-container.large:after {
+            content: ">";
+            position: absolute;
+            right: 0;
+            top: 50%;
+            font-size: 2rem;
+        }
+
+        .cover-container {
+            width: 100%;
+            white-space: nowrap;
+            overflow-x: scroll;
+            overflow-y: hidden;
+            text-align: center;
+        }
+
+
+        .cover-item {
+            display: inline-block;
+            margin: 8px 8px;
+            box-shadow: 2px 2px 4px #bbb;
+            border-top-right-radius: 4px;
+            vertical-align: bottom;
+        }
+
+        .nav {
+            font-size: 2rem;
+            background: #c6c8ca;
+            box-shadow: 5px 0 15px;
+            min-height: 100vh;
+            overflow: hidden;
+        }
+
+    </style>
+</head>
+
+<body>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-3">
+            <ul class="nav flex-column">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">Active</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#">Disabled</a>
+                </li>
+            </ul>
+        </div>
+        <div class="col-9">
+
+            <div class="cover-container-container large d-flex align-items-center">
+                <div class="cover-container">
+                    <div class="cover-item">
+                        <img src="https://placekitten.com/200/300" width="200" height="300">
+                        <p class="text-center">Kass</p>
+                    </div>
+                    <div class="cover-item">
+                        <img src="https://placekitten.com/200/300" width="200" height="300">
+                        <p class="text-center">Kass</p>
+                    </div>
+                    <div class="cover-item">
+                        <img src="https://placekitten.com/200/300" width="200" height="300">
+                        <p class="text-center">Kass</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>
